@@ -1,4 +1,4 @@
-package org.example.transaction;
+package main.java.org.example.transaction;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

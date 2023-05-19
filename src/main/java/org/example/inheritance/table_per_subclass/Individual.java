@@ -1,4 +1,4 @@
-package org.example.inheritance.table_per_subclass;
+package main.java.org.example.inheritance.table_per_subclass;
 
 
 import javax.persistence.Column;

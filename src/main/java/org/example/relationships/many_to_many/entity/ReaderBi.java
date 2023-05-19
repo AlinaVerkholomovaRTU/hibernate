@@ -1,4 +1,4 @@
-package org.example.relationships.many_to_many.entity;
+package main.java.org.example.relationships.many_to_many.entity;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;

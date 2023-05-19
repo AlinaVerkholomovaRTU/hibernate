@@ -1,4 +1,4 @@
-package org.example.performance;
+package main.java.org.example.performance;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

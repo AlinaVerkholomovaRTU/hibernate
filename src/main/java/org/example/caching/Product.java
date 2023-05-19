@@ -1,4 +1,4 @@
-package org.example.caching;
+package main.java.org.example.caching;
 
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;

@@ -1,4 +1,4 @@
-package org.example.aggregate_functions;
+package main.java.org.example.aggregate_functions;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

@@ -1,4 +1,4 @@
-package org.example.performance;
+package main.java.org.example.performance;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

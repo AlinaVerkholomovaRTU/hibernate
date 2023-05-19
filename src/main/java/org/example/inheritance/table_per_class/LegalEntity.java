@@ -1,4 +1,4 @@
-package org.example.inheritance.table_per_class;
+package main.java.org.example.inheritance.table_per_class;
 
 import javax.persistence.AttributeOverride;
 import javax.persistence.AttributeOverrides;

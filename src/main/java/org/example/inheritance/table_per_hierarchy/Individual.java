@@ -1,4 +1,4 @@
-package org.example.inheritance.table_per_hierarchy;
+package main.java.org.example.inheritance.table_per_hierarchy;
 
 import javax.persistence.Column;
 import javax.persistence.DiscriminatorValue;

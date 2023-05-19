@@ -1,4 +1,4 @@
-package org.example.lazy_loading;
+package main.java.org.example.lazy_loading;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
