@@ -1,4 +1,4 @@
-package main.java.org.example.inheritance.table_per_hierarchy;
+package org.example.inheritance.table_per_hierarchy;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

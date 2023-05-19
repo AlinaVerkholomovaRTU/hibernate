@@ -1,7 +1,7 @@
-package main.java.org.example.relationships.many_to_one.one_to_many_uni;
+package org.example.relationships.many_to_one.one_to_many_uni;
 
-import main.java.org.example.relationships.many_to_one.entity.SchoolUni;
-import main.java.org.example.relationships.many_to_one.entity.TeacherUni;
+import org.example.relationships.many_to_one.entity.SchoolUni;
+import org.example.relationships.many_to_one.entity.TeacherUni;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;

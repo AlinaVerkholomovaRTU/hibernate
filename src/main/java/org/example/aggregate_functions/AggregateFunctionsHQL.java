@@ -1,4 +1,4 @@
-package main.java.org.example.aggregate_functions;
+package org.example.aggregate_functions;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -21,13 +21,13 @@ public class AggregateFunctionsHQL {
 
         try{
 
-            Random rand = new Random();
-            int i = 1;
-            while (i < 1001) {
-                int salaryRand = rand.nextInt(5001);
-                session.save(new Employee("Andrew", salaryRand));
-                i++;
-            }
+//            Random rand = new Random();
+//            int i = 1;
+//            while (i < 1001) {
+//                int salaryRand = rand.nextInt(5001);
+//                session.save(new Employee("Andrew", salaryRand));
+//                i++;
+//            }
             long startTime1 = currentTimeMillis();
 
             Double averageSalary = (Double)session.createQuery("SELECT avg(salary) from Employee")

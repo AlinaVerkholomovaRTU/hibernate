@@ -1,4 +1,4 @@
-package main.java.org.example.caching;
+package org.example.caching;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

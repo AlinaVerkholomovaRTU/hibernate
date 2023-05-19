@@ -1,4 +1,4 @@
-package main.java.org.example.inheritance.table_per_subclass;
+package org.example.inheritance.table_per_subclass;
 
 
 import org.hibernate.Session;

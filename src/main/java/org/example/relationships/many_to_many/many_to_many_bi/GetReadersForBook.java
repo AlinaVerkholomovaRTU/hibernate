@@ -1,7 +1,7 @@
-package main.java.org.example.relationships.many_to_many.many_to_many_bi;
+package org.example.relationships.many_to_many.many_to_many_bi;
 
-import main.java.org.example.relationships.many_to_many.entity.BookBi;
-import main.java.org.example.relationships.many_to_many.entity.ReaderBi;
+import org.example.relationships.many_to_many.entity.BookBi;
+import org.example.relationships.many_to_many.entity.ReaderBi;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;

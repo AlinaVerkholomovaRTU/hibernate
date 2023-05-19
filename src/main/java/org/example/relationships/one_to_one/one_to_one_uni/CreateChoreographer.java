@@ -1,7 +1,7 @@
-package main.java.org.example.relationships.one_to_one.one_to_one_uni;
+package org.example.relationships.one_to_one.one_to_one_uni;
 
-import main.java.org.example.relationships.one_to_one.entity.ChoreographerUni;
-import main.java.org.example.relationships.one_to_one.entity.ChoreographerDetailsUni;
+import org.example.relationships.one_to_one.entity.ChoreographerUni;
+import org.example.relationships.one_to_one.entity.ChoreographerDetailsUni;
 import org.hibernate.Session;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.SessionFactory;

@@ -1,10 +1,10 @@
-package main.java.org.example.inheritance.table_per_subclass;
+package org.example.inheritance.table_per_subclass;
 
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.PrimaryKeyJoinColumn;
-import javax.persistence.Table;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.PrimaryKeyJoinColumn;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name="individual")

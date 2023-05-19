@@ -27,7 +27,7 @@
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-core</artifactId>
-      <version>5.6.14.Final</version>
+      <version>6.1.7.Final</version>
     </dependency>
 
 <!--    <dependency>-->
@@ -35,6 +35,12 @@
 <!--      <artifactId>mysql-connector-java</artifactId>-->
 <!--      <version>8.0.32</version>-->
 <!--    </dependency>-->
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-core</artifactId>
+      <version>9.8.1</version>
+    </dependency>
+
     <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
@@ -53,4 +59,23 @@
 <!--    </dependency>-->
 
   </dependencies>
+  <build>
+    <plugins>
+      <!-- Flyway Plugin -->
+      <plugin>
+        <groupId>org.flywaydb</groupId>
+        <artifactId>flyway-maven-plugin</artifactId>
+        <version>9.8.1</version>
+        <configuration>
+          <url>jdbc:postgresql://localhost:5432/hibernate</url>
+          <user>alinaverkholomova</user>
+          <password>1Revan@loves8996</password>
+          <locations>
+            <location>db/migration</location>
+          </locations>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
 </project>
