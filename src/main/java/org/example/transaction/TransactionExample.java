@@ -23,8 +23,8 @@ public class TransactionExample {
             if (bankAccount1 != null) {
                 bankAccount1.setBalance(bankAccount1.getBalance() - amount);
                 bankAccount2.setBalance(bankAccount2.getBalance() + amount);
-                session.update(bankAccount1);
-                session.update(bankAccount2);
+                session.persist(bankAccount1);
+                session.persist(bankAccount2);
             }
             else
                 System.out.println("Bank account not found");

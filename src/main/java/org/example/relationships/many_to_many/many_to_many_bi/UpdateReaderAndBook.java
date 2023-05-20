@@ -27,13 +27,13 @@ public class UpdateReaderAndBook {
             if (book.getReaders() != null) {
                 for (ReaderBi reader : book.getReaders()) {
                     reader.setEmail("new@mail.com");
-                    session.save(reader);
+                    session.persist(reader);
                 }
             }
             else {
                 System.out.println("Readers not found");
             }
-            session.save(book);
+            session.persist(book);
 
             session.getTransaction().commit();
 

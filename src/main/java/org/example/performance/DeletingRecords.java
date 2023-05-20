@@ -24,10 +24,10 @@ public class DeletingRecords {
             while (i < 1001) {
 
                 Passport passport = session.get(Passport.class, i);
-                session.delete(passport);
+                session.remove(passport);
                 session.beginTransaction();
 
-                session.save(passport);
+                session.persist(passport);
                 session.getTransaction().commit();
 
                 i++;

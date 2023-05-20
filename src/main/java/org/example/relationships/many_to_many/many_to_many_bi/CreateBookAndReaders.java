@@ -33,9 +33,9 @@ public class CreateBookAndReaders {
 
             book.setReaders(readers);
 
-            session.save(book);
-            session.save(reader1);
-            session.save(reader2);
+            session.persist(book);
+            session.persist(reader1);
+            session.persist(reader2);
 
             session.getTransaction().commit();
 

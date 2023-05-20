@@ -27,7 +27,7 @@ public class CreateChoreographer {
 
             session.beginTransaction();
 
-            session.save(tempChoreographer);
+            session.persist(tempChoreographer);
 
             session.getTransaction().commit();
 

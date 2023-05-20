@@ -27,7 +27,7 @@ public class DeleteBook {
 
             if (book != null) {
 
-                session.delete(book);
+                session.remove(book);
             }
 
             session.getTransaction().commit();

@@ -14,14 +14,14 @@ public class CachingExample {
 
         Session session1 = factory.openSession();
 
-        Product product1 = session1.load(Product.class, 1);
+        Product product1 = session1.find(Product.class, 1);
         System.out.println(product1);
 
         session1.close();
 
         Session session2 = factory.openSession();
 
-        Product product2 = session2.load(Product.class, 1);
+        Product product2 = session2.find(Product.class, 1);
         System.out.println(product2);
 
 

@@ -27,7 +27,7 @@ public class UpdatingRecords {
                 passport.setType("Emergency");
                 session.beginTransaction();
 
-                session.save(passport);
+                session.persist(passport);
                 session.getTransaction().commit();
 
                 i++;

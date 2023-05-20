@@ -21,11 +21,10 @@ public class UpdateChoreographer {
 
             int theId = 2;
             ChoreographerBi tempChoreographer = session.get(ChoreographerBi.class, theId);
-            ChoreographerDetailsBi tempDetails = session.get(ChoreographerDetailsBi.class, theId);
 
             if (tempChoreographer != null) {
                 tempChoreographer.setLastName("White");
-                session.save(tempChoreographer);
+                session.persist(tempChoreographer);
             }
             else
                 System.out.println("Choreographer not found");

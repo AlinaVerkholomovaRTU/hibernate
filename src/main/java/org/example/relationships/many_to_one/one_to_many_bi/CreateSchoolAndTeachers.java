@@ -37,9 +37,9 @@ public class CreateSchoolAndTeachers {
 
             school.setTeachers(teachers);
 
-            session.save(school);
-            session.save(teacher1);
-            session.save(teacher2);
+            session.persist(school);
+            session.persist(teacher1);
+            session.persist(teacher2);
             session.getTransaction().commit();
             System.out.println("Done!");
 

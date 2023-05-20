@@ -26,7 +26,7 @@ public class CreatingRecords {
                 Passport passport = new Passport("AB-1111", "ordinary");
                 session.beginTransaction();
 
-                session.save(passport);
+                session.persist(passport);
                 session.getTransaction().commit();
 
                 i++;

@@ -28,7 +28,7 @@ public class UpdateSchool {
             if (schoolUni != null) {
 
                 schoolUni.setCity("Valmiera");
-                session.save(schoolUni);
+                session.persist(schoolUni);
 
             }
 

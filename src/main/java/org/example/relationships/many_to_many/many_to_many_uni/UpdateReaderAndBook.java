@@ -29,13 +29,13 @@ public class UpdateReaderAndBook {
 
                 for (BookUni book : reader.getBooks()) {
                     book.setTitle("The Hobbit");
-                    session.save(book);
+                    session.persist(book);
                 }
             }
             else {
                 System.out.println("Books not found");
             }
-            session.save(reader);
+            session.persist(reader);
 
             session.getTransaction().commit();
 

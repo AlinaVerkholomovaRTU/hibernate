@@ -15,15 +15,12 @@ public class GetChoreographer {
                 .addAnnotatedClass(ChoreographerDetailsUni.class).
                 buildSessionFactory();
 
-        //create session
         Session session = factory.openSession();
 
 
         try {
-            //start a transaction
             session.beginTransaction();
 
-            //get Choreographer by primary key / id
             int theId = 1;
             ChoreographerUni tempChoreographer = session.get(ChoreographerUni.class, theId);
 
@@ -33,7 +30,6 @@ public class GetChoreographer {
             else
                 System.out.println("Choreographer not found");
 
-            //commit transaction
             session.getTransaction().commit();
 
         } finally{

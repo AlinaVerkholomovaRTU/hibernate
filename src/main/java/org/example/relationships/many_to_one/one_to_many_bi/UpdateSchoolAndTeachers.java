@@ -9,18 +9,16 @@ import org.hibernate.cfg.Configuration;
 
 public class UpdateSchoolAndTeachers {
     public static void main(String[] args) {
-        //create session factory
+
         SessionFactory factory = new Configuration()
                 .configure("hibernate.cfg.xml")
                 .addAnnotatedClass(SchoolBi.class)
                 .addAnnotatedClass(TeacherBi.class)
                 .buildSessionFactory();
 
-        //create session
         Session session = factory.openSession();
 
         try {
-            //start a transaction
             session.beginTransaction();
 
             int theId = 11;
@@ -31,12 +29,12 @@ public class UpdateSchoolAndTeachers {
             if (school != null) {
                 school.setName("Lyceum");
                 school.setTeachers(null);
-                session.save(school);
+                session.persist(school);
 
                 if (school.getTeachers() != null) {
                     for (TeacherBi teacherTemp : school.getTeachers()) {
                         teacherTemp.setFirstName("Adam");
-                        session.save(teacherTemp);
+                        session.persist(teacherTemp);
                     }
                 }
                 else{
@@ -46,7 +44,6 @@ public class UpdateSchoolAndTeachers {
             else
                 System.out.println("School not found");
 
-            //commit transaction
             session.getTransaction().commit();
 
 

@@ -32,7 +32,7 @@ public class DeleteBook {
 
                     reader.setBooks(null);
 
-                    session.delete(book);
+                    session.remove(book);
                 }
             }
 

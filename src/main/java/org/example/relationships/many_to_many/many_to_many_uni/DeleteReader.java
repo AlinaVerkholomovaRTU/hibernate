@@ -27,7 +27,7 @@ public class DeleteReader {
 
             if (reader != null) {
 
-                session.delete(reader);
+                session.remove(reader);
             }
 
             session.getTransaction().commit();

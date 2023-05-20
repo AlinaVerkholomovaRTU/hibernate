@@ -27,7 +27,7 @@ public class DeleteSchool {
 
             if (schoolUni != null) {
 
-                session.delete(schoolUni);
+                session.remove(schoolUni);
 
             }
 

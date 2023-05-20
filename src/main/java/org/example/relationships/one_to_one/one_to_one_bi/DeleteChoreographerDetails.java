@@ -27,7 +27,7 @@ public class DeleteChoreographerDetails {
             ChoreographerBi tempChoreographer =  tempDetail.getChoreographerBi();
            tempChoreographer.setChoreographerDetailsBi(null);
 
-            session.delete(tempDetail);
+            session.remove(tempDetail);
 
             session.getTransaction().commit();
 

@@ -31,9 +31,9 @@ public class InheritanceExample {
             company.setRegisterNumber(1234566789);
             company.setAmount(500);
 
-            session.save(client);
-            session.save(tempIndividual);
-            session.save(company);
+            session.persist(client);
+            session.persist(tempIndividual);
+            session.persist(company);
 
             session.getTransaction().commit();
 

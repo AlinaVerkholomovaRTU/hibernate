@@ -32,7 +32,7 @@ public class DeleteSchool {
                     teacher.setSchool(null);
                 }
 
-                session.delete(school);
+                session.remove(school);
 
             }
 

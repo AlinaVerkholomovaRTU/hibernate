@@ -27,7 +27,7 @@ public class DeleteTeacher {
 
             if (teacher != null) {
 
-                session.delete(teacher);
+                session.remove(teacher);
 
             }
 

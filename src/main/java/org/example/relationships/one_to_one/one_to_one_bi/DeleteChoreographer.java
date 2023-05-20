@@ -24,7 +24,7 @@ public class DeleteChoreographer {
         ChoreographerBi tempChoreographer = session.get(ChoreographerBi.class, theId);
 
         if (tempChoreographer != null)
-            session.delete(tempChoreographer);
+            session.remove(tempChoreographer);
         else
             System.out.println("Choreographer not found");
 
