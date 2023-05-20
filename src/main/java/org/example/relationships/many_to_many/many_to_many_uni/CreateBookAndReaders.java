@@ -18,7 +18,7 @@ public class CreateBookAndReaders {
                 .addAnnotatedClass(ReaderUni.class)
                 .buildSessionFactory();
 
-        Session session = factory.getCurrentSession();
+        Session session = factory.openSession();
 
         try {
             session.beginTransaction();

@@ -16,7 +16,7 @@ public class DeleteSchool {
                 .addAnnotatedClass(TeacherBi.class)
                 .buildSessionFactory();
 
-        Session session = factory.getCurrentSession();
+        Session session = factory.openSession();
 
         try {
             session.beginTransaction();

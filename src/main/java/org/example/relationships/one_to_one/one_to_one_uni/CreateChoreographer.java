@@ -16,7 +16,7 @@ public class CreateChoreographer {
                 .addAnnotatedClass(ChoreographerDetailsUni.class).
                 buildSessionFactory();
 
-        Session session = factory.getCurrentSession();
+        Session session = factory.openSession();
 
         try {
 

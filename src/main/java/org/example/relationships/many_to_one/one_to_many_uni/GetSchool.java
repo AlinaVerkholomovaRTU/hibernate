@@ -16,12 +16,12 @@ public class GetSchool {
                 .addAnnotatedClass(TeacherUni.class)
                 .buildSessionFactory();
 
-        Session session = factory.getCurrentSession();
+        Session session = factory.openSession();
 
         try {
             session.beginTransaction();
 
-            int schoolId = 2;
+            int schoolId = 1;
 
             SchoolUni schoolUni = session.get(SchoolUni.class, schoolId);
 

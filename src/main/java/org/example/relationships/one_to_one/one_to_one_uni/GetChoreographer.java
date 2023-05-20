@@ -16,7 +16,7 @@ public class GetChoreographer {
                 buildSessionFactory();
 
         //create session
-        Session session = factory.getCurrentSession();
+        Session session = factory.openSession();
 
 
         try {

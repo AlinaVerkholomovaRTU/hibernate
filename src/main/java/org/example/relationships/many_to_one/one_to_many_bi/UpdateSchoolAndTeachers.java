@@ -17,7 +17,7 @@ public class UpdateSchoolAndTeachers {
                 .buildSessionFactory();
 
         //create session
-        Session session = factory.getCurrentSession();
+        Session session = factory.openSession();
 
         try {
             //start a transaction

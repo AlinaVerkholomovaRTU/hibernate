@@ -16,7 +16,7 @@ public class GetTeachersForSchool {
                 .addAnnotatedClass(TeacherBi.class)
                 .buildSessionFactory();
 
-        Session session = factory.getCurrentSession();
+        Session session = factory.openSession();
 
         try {
             session.beginTransaction();

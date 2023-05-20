@@ -15,7 +15,7 @@ public class DeleteChoreographer {
                 .addAnnotatedClass(ChoreographerDetailsBi.class)
                 .buildSessionFactory();
 
-        Session session = factory.getCurrentSession();
+        Session session = factory.openSession();
 
     try {
         session.beginTransaction();

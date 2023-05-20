@@ -16,7 +16,7 @@ public class DeleteBook {
                 .addAnnotatedClass(ReaderBi.class)
                 .buildSessionFactory();
 
-        Session session = factory.getCurrentSession();
+        Session session = factory.openSession();
 
         try {
             session.beginTransaction();
