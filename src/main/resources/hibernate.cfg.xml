@@ -19,10 +19,11 @@
         <property name="show_sql">true</property>
 
         <!-- Update database on startup -->
-        <property name="hibernate.hbm2ddl.auto">update</property>
+<!--        <property name="hibernate.hbm2ddl.auto">validate</property>-->
 <!--        <property name="cache.use_second_level_cache">true</property>-->
 <!--        <property name="cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>-->
 <!--        <mapping class="org.example.caching.Product"/>-->
+        <property name="hibernate.hbm2ddl.auto">update</property>
 
     </session-factory>
 
