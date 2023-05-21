@@ -9,6 +9,15 @@ import java.util.Random;
 import static java.lang.System.currentTimeMillis;
 
 public class AggregateFunctionsHQL {
+    public static void insertData(Session session) {
+        Random rand = new Random();
+        int i = 1;
+        while (i < 1001) {
+            int salaryRand = rand.nextInt(5001);
+            session.persist(new Employee("Andrew", salaryRand));
+            i++;
+        }
+    }
 
     public static void main(String[] args) {
 
@@ -21,13 +30,8 @@ public class AggregateFunctionsHQL {
 
         try{
 
-//            Random rand = new Random();
-//            int i = 1;
-//            while (i < 1001) {
-//                int salaryRand = rand.nextInt(5001);
-//                session.save(new Employee("Andrew", salaryRand));
-//                i++;
-//            }
+            insertData(session);
+
             long startTime1 = currentTimeMillis();
 
             Double averageSalary = (Double)session.createQuery("SELECT avg(salary) from Employee")
